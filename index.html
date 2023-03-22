@@ -6,17 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Likes</title>
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5ea2e37ae4.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="container">
-    <main class="card">
-      <div class="user-line flex">
-        <h1>Some User</h1>
-        <h2><scan id="likes">3</scan> like(s)</h2>
-        <button class="btn" onclick="like(likes)">Like</button>
+    <!-- nav starts -->
+    <nav>Network</nav>
+    <!-- h1 starts -->
+    <h1>Your Feed</h1>
+    <!-- main starts -->
+    <main class="container flex align-start">
+      <div class="card">
+        <!-- profile card starts -->
+        <section class="profile-card">
+          <i class="fa-regular fa-circle-user"></i>
+          <a href="#">Add an avatar</a>
+          <h2>James Doe</h2>
+        </section>
       </div>
-      <div class="line">
-        <p>This is some filler text, it can say anything we like.</p>
-      </div>
+      <section class="posts">
+        <!-- card starts here -->
+        <div class="card">
+          <!-- post starts -->
+          <div class="post">
+            <div class="user-likes-line flex">
+              <h2 class="poster-name">Neil M</h2>
+              <h2><scan id="likes1">9</scan> like(s)</h2>
+              <button class="btn" onclick="like(likes1)">Like</button>
+            </div>
+            <div class="content-line">
+              <p>
+                I just set up this new discord bot, let me know what you all
+                think. <a href="#">link</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <!-- post starts -->
+          <div class="post">
+            <div class="user-likes-line flex">
+              <h2 class="poster-name">Nichole K</h2>
+              <h2><scan id="likes2">12</scan> like(s)</h2>
+              <button class="btn" onclick="like(likes2)">Like</button>
+            </div>
+            <div class="content-line">
+              <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <!-- post starts -->
+          <div class="post">
+            <div class="user-likes-line flex">
+              <h2 class="poster-name">Jim R</h2>
+              <h2><scan id="likes3">9</scan> like(s)</h2>
+              <button class="btn" onclick="like(likes3)">Like</button>
+            </div>
+            <div class="content-line">
+              <p>
+                I can't stop listening to the <a href="#">new album</a>. Who
+                else is liking it?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="script.js"></script>
   </body>
